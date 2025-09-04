@@ -10,7 +10,7 @@
       - DatabaseSettings__LogLevel=Information
       - DatabaseSettings__EnableSensitiveDataLogging=false
     ports:
-      - "5056:8080"
+      - "5056:8082"
       - "7279:8081"
     depends_on:
       - db
@@ -27,7 +27,7 @@
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__MongoDbConnection=mongodb://root:example@mongo:27017
     ports:
-      - "5241:8080"
+      - "5241:8082"
       - "7040:8081"
     depends_on:
       - db
